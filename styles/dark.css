@@ -1,3 +1,11 @@
+:root {
+  --backgroundImage: url(../images/cover-image-dark.png);
+  --backgroundColor: #483d8b;
+  --titleColor: #db00ff;
+  --titleDecor: #ff0070;
+  --subtitleColor: #000028;
+  --textColor: #f1b2ce;
+}
 /*
   Специально для тёмной темы при наличии класса,
   здесь окажутся стили, которые нужно переопределить принудительно,
@@ -5,8 +13,10 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --backgroundImage: url(../images/cover-image-dark.png);
+  --backgroundColor: #483d8b;
+  --titleColor: #db00ff;
+  --titleDecor: #ff0070;
+  --subtitleColor: #000028;
+  --textColor: #f1b2ce;
 }
