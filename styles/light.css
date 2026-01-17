@@ -5,5 +5,14 @@
 */
 
 :root.theme-light {
-  
+  --backgroundImage: url(../images/cover-image-light.png);
+  --backgroundColor: #e8c8c8;
+  --titleColor: #ffc2e6;
+  --titleDecor: #FF8DCB;
+  --subtitleColor: #353430;
+  --textColor: #353430;
+}
+
+.theme-light .caption__dark-theme {
+  display: none;
 }
