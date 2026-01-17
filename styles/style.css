@@ -13,7 +13,6 @@
 .header {
   block-size: 100vh;
   min-block-size: 668px;
-  padding-block: 10px;
   position: relative;
   display: grid;
   grid-template-columns: 3 (1fr min-content 1fr);
@@ -51,6 +50,31 @@
   align-self: end;
 }
 
+.header__theme-menu-list {
+  display: grid;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  background-color: inherit;
+  border: none;
+  font-family: var(--font);
+  font-size: var(--textSize);
+  line-height: 18px;
+  font-weight: var(--weightRegular);
+  font-style: var(--styleNormal);
+  color: var(--buttonColor);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--buttonColor);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  border-block-end: 1px solid var(--buttonColor);
+}
+
 .title {
   justify-self: center;
   align-self: center;
@@ -75,9 +99,8 @@
   background-color: var(--titleDecor);
 }
 
-
 p .header__slogan {
-   justify-self: center;
+  justify-self: center;
   align-self: center;
   font-family: var(--font);
   font-weight: var(--weightBold);
@@ -90,7 +113,6 @@ p .header__slogan {
 
 .content,
 .gallery {
-  margin-block-end: 30px;
   font-family: var(--font);
   font-weight: var(--weightBold);
   font-style: var(--styleBold);
@@ -109,6 +131,10 @@ p .header__slogan {
   background-color: var(--titleDecor);
 }
 
+.max-subtitle {
+  margin-block-end: 20px;
+}
+
 .content__subtitle-regular {
   font-weight: var(--weightRegular);
   font-style: var(--styleNormal);
@@ -122,14 +148,23 @@ p .header__slogan {
   color: var(--textColor);
 }
 
+.gallery__list-images {
+  display: grid;
+  gap: 10px;
+}
+
 .gallery-image {
   max-inline-size: 355px;
 }
 
 .footer {
+  min-block-size: 668px;
   position: relative;
+  display: grid;
 }
 
 .footer-title {
+  align-items: center;
+  justify-content: center;
   text-shadow: 2px 2px 0 var(--titleDecor);
 }
