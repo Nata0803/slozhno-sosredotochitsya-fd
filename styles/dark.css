@@ -5,6 +5,7 @@
   --titleDecor: #ff0070;
   --subtitleColor: #000028;
   --textColor: #f1b2ce;
+  --outlineColor: rgba(255, 0, 112, 0.4); 
 }
 /*
   Специально для тёмной темы при наличии класса,
@@ -19,4 +20,5 @@
   --titleDecor: #ff0070;
   --subtitleColor: #000028;
   --textColor: #f1b2ce;
+  --outlineColor: rgba(255, 0, 112, 0.4); 
 }

@@ -15,7 +15,12 @@
   min-block-size: 668px;
   position: relative;
   display: grid;
-  grid-template-columns: 3 (1fr min-content 1fr);
+  grid-template-rows: 1fr min-content 1fr;
+  margin-block-end: 10px;
+}
+
+.decorative__element-start {
+  position: absolute;
 }
 
 .decorative__element-start::before {
@@ -36,6 +41,7 @@
 }
 
 .caption__dark-theme::after {
+  position: absolute;
   padding-inline-start: 10px;
   content: "";
   display: inline-block;
@@ -47,7 +53,8 @@
 
 .header__theme-menu {
   justify-self: end;
-  align-self: end;
+  align-self: center;
+  padding-inline-end: 6px;
 }
 
 .header__theme-menu-list {
@@ -67,17 +74,19 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--buttonColor);
+  outline: 1px solid var(--outlineColor);
   cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
+  outline: none;
   border-block-end: 1px solid var(--buttonColor);
 }
 
 .title {
   justify-self: center;
   align-self: center;
+  margin-block-start: 1px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-family: var(--font);
   font-weight: var(--weightBold);
@@ -90,6 +99,7 @@
 .header__slogan {
   justify-self: center;
   align-self: center;
+  margin-block-end: 12px;
   font-family: var(--font);
   font-weight: var(--weightBold);
   font-style: var(--styleBold);
@@ -111,8 +121,8 @@ p .header__slogan {
   background-color: var(--titleDecor);
 }
 
-.content,
-.gallery {
+.content {
+  padding-block-start: 30px;
   font-family: var(--font);
   font-weight: var(--weightBold);
   font-style: var(--styleBold);
@@ -122,6 +132,7 @@ p .header__slogan {
 
 .content-title {
   margin-block-end: 20px;
+  font-size: var(--textSize);
   color: var(--titleDecor);
 }
 
@@ -148,7 +159,11 @@ p .header__slogan {
   color: var(--textColor);
 }
 
-.gallery__list-images {
+.subtitle-margin {
+   margin-block-start: 50px;
+}
+
+.gallery {
   display: grid;
   gap: 10px;
 }
@@ -161,10 +176,31 @@ p .header__slogan {
   min-block-size: 668px;
   position: relative;
   display: grid;
+  padding-block-start: 245px;
 }
 
 .footer-title {
   align-items: center;
   justify-content: center;
   text-shadow: 2px 2px 0 var(--titleDecor);
+}
+
+@media(min-width: 768px) {
+  .header__theme-menu {
+    margin-block-start: 145px;
+  }
+
+  .title {
+    justify-self: start;
+  }
+
+  .header__slogan {
+    max-inline-size: 364px;
+    justify-self: end;
+  }
+
+  .content {
+    display: flex;
+    gap: 20px;
+  }
 }
