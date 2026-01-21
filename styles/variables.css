@@ -1,6 +1,6 @@
 :root {
   --backgroundImage: url(../images/cover-image-dark.png);
-  --backgroundColor: #483D8B;
+  --backgroundColor: #000028;
   --titleColor: #DB00FF;
   --titleDecor: #FF0070;
   --subtitleColor: #000028;
@@ -14,4 +14,5 @@
   --textLineHeight: 23.4px;
   --weightRegular: 400;
   --styleNormal: normal;
+  --linkDecor: #FF0070;
 }
