@@ -8,6 +8,7 @@
   --outlineColor: rgba(255, 0, 112, 0.4);
   --linkDecor: #ff0070;
   --buttonColor: #FF0070;
+  --decorColor: #FF0070;
 }
 
 :root.theme-dark {
@@ -20,4 +21,5 @@
   --outlineColor: rgba(255, 0, 112, 0.4);
   --linkDecor: #ff0070;
   --buttonColor: #FF0070;
+  --decorColor: #FF0070;
 }

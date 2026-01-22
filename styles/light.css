@@ -14,6 +14,7 @@
   --buttonColor: #ff8dcb;
   --linkDecor: #ff8dcb;
   --outlineColor: rgba(rgba(50, 49, 45, 0.4));
+  --decorColor: #ff8dcb;
 }
 
 .theme-light .caption__dark-theme {
@@ -31,6 +32,7 @@
     --buttonColor: #ff8dcb;
     --linkDecor: #ff8dcb;
     --outlineColor: rgba(rgba(50, 49, 45, 0.4));
+    --decorColor: #ff8dcb;
   }
 
   .theme-light .caption__dark-theme {

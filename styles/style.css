@@ -21,34 +21,62 @@
 
 .decorative__element-start {
   position: absolute;
+  display: inline-block;
 }
 
 .decorative__element-start::before {
   position: absolute;
+  display: inline-block;
   top: 10px;
-  right: 10px;
+  left: 330px;
   content: "";
   block-size: 25px;
   inline-size: 25px;
-  border-top: 1px solid white;
-  border-right: 1px solid white;
+  border-block-start: 1px solid var(--decorColor);
+  border-inline-end: 1px solid var(--decorColor);
+}
+
+.decorative__element-end {
+  position: absolute;
+  display: inline-block;
+}
+
+.decorative__element-end::before {
+  position: absolute;
+  display: inline-block;
+  top: 633px;
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-block-end: 1px solid var(--decorColor);
+  border-inline-start: 1px solid var(--decorColor);
 }
 
 .caption__dark-theme {
   position: absolute;
-  left: 304px;
+  display: inline-block;
   top: 10px;
+  right: 28px;
+  font-family: var(--font);
+  font-weight: var(--weightRegular);
+  font-style: var(--styleNormal);
+  font-size: var(--textSize);
+  line-height: 25px;
+  text-align: center;
+  color: var(--decorColor);
 }
 
 .caption__dark-theme::after {
   position: absolute;
-  padding-inline-start: 10px;
   content: "";
   display: inline-block;
+  margin-inline-start: 10px;
   inline-size: 9px;
   block-size: 9px;
-  background-color: black;
+  background-color: var(--decorColor);
   border-radius: 60px;
+  box-shadow: 0px 0px 4px 2px var(--decorColor);
+  align-self: center;
 }
 
 .header__theme-menu {
@@ -189,6 +217,7 @@ p .header__slogan {
 .gallery {
   display: grid;
   gap: 10px;
+  margin-block-end: 40px;
 }
 
 .gallery-image {
@@ -199,7 +228,6 @@ p .header__slogan {
   min-block-size: 668px;
   position: relative;
   display: grid;
-  padding-block-start: 245px;
 }
 
 .footer-title {
@@ -232,6 +260,21 @@ p .header__slogan {
     margin-inline-end: 10.5px;
   }
 
+  .caption__dark-theme {
+    top: 20px;
+    left: 687px;
+  }
+
+  .decorative__element-start::before {
+    top: 20px;
+    left: 722px;
+  }
+
+  .decorative__element-end::before {
+    top: 979px;
+    left: 20px;
+  }
+
   .header__theme-menu-list {
     margin-block-start: 19px;
   }
@@ -256,8 +299,7 @@ p .header__slogan {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "title article article";
+    grid-template-areas: "title article article";
   }
 
   .content-title {
@@ -273,9 +315,6 @@ p .header__slogan {
     padding-inline-start: 10px;
     grid-area: article;
   }
-
-
-
 }
 
 @media (min-width: 1024px) {
