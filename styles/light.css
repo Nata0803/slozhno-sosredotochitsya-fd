@@ -35,7 +35,7 @@
     --decorColor: #ff8dcb;
   }
 
-  .theme-light .caption__dark-theme {
+  .theme-auto .caption__dark-theme {
     display: none;
   }
 }
