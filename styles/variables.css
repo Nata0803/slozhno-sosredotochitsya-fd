@@ -7,7 +7,7 @@
   --textColor: #F1B2CE;
   --buttonColor: #FF0070;
   --outlineColor: rgba(255, 0, 112, 0.4); 
-  --font: "IBM Plex Mono", serif; 
+  --font: "IBM Plex Mono", monospace; 
   --weightBold: 700; 
   --styleBold: bold;
   --textSize: 18px;

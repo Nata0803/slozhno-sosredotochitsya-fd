@@ -1,20 +1,12 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   --backgroundImage: url(../images/cover-image-light.png);
   --backgroundColor: #e8c8c8;
   --titleColor: #ffc2e6;
-  --titleDecor: #ff8dcb;
   --subtitleColor: #353430;
   --textColor: #353430;
-  --buttonColor: #ff8dcb;
-  --linkDecor: #ff8dcb;
-  --outlineColor: rgba(rgba(50, 49, 45, 0.4));
-  --decorColor: #ff8dcb;
+  --outlineColor: rgba(50, 49, 45, 0.4);
+  --decorColor: #353430;
+  --textBgColor: #ff8dcb;
 }
 
 .theme-light .caption__dark-theme {
@@ -26,13 +18,11 @@
     --backgroundImage: url(../images/cover-image-light.png);
     --backgroundColor: #e8c8c8;
     --titleColor: #ffc2e6;
-    --titleDecor: #ff8dcb;
     --subtitleColor: #353430;
     --textColor: #353430;
-    --buttonColor: #ff8dcb;
-    --linkDecor: #ff8dcb;
-    --outlineColor: rgba(rgba(50, 49, 45, 0.4));
-    --decorColor: #ff8dcb;
+    --outlineColor: rgba(50, 49, 45, 0.4);
+    --decorColor: #353430;
+    --textBgColor: #ff8dcb;
   }
 
   .theme-auto .caption__dark-theme {
