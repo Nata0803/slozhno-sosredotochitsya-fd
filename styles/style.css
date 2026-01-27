@@ -220,10 +220,11 @@ p .header__slogan {
 .wrap-gallery {
   display: grid;
   gap: 10px;
+  justify-content: center;
 }
 
 .gallery-image {
-  max-inline-size: 355px;
+  inline-size: 100%;
 }
 
 .footer {
@@ -433,6 +434,7 @@ p .header__slogan {
     inline-size: 984px;
     align-items: start;
     justify-self: start;
+    inline-size: 100%;
   }
 
   .card {
